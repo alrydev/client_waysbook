@@ -6,10 +6,7 @@ import { UserContext } from '../context/userContext';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from 'react-router-dom';
-import bg1 from '../assets/images/bg1.png'
-import bg2 from '../assets/images/bg2.png'
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,10 +16,9 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
 export default function ListBook() {
 
-    const [state, dispatch] = useContext(UserContext)
+    const [state,] = useContext(UserContext)
 
     let { data: listBook } = useQuery('listBookCache', async () => {
         const response = await API.get('/books-regular')
