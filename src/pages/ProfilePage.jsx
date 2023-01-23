@@ -311,6 +311,12 @@ export default function ProfilePage() {
                             <Form.Label>Gender</Form.Label>
                             <Form.Control onChange={handleChange} name="gender" type="text" value={form.gender} />
                         </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control onChange={handleChange} name="password" type="password" value={form.password} />
+                        </Form.Group>
+
                         {/* <Form.Group className="mb-3" controlId="">
                             <Form.Label>Password</Form.Label>
                             <Form.Control name="password"
